@@ -43,12 +43,15 @@
 
         <!-- MODAL FOR UPDATING ITEM -->
         <div id="modalForUpdate" class="fixed z-10 left-0 top-0 w-[100vw] h-[100vh] backdrop-blur-sm bg-black bg-opacity-25 overflow-auto">
-            <div class="bg-white w-[34vw] mt-[15%] m-auto py-4 rounded-md">
-                <h1 class="text-center text-black font-bold uppercase text-2xl text-blue-400 tracking-widest">Update Item</h1>
+            <div class="bg-white w-[34vw] mt-[5%] m-auto pb-4 rounded-md">
+                <div class="w-full bg-blue-400 py-6 mb-4 rounded-t-md shadow-md">
+                    <h1 class="text-center font-bold uppercase text-[25px] text-white tracking-widest">Update Item</h1>
+                </div>
             <iframe name="test" style="display:none;"></iframe>
             <form onsubmit="updateData()" action="list_all_items.php" method="POST" target="test">
                 <div class="w-[80%] m-auto flex flex-col justify-start items-start">
                 <p id="errorUpdate" class="text-red-300 place-self-center text-[12px] underline"></p>
+                
                     <!-- <label>Description</label> --><p id="error" class="text-red-400 place-self-center"></p>
                     <input type="text" class="w-full outline-none border-b-2 my-2" name="id" value="<?php echo $id; ?>" readonly/>
                     <input type="text" class="w-full outline-none border-b-2 my-2" placeholder="Description" name="description" value="<?php echo $descriptionUpdate; ?>" required/>
@@ -96,8 +99,8 @@
                     <button type="submit" class="w-full bg-blue-400 py-2 rounded-md mt-6 hover:bg-blue-500 hover:text-black text-white text-[20px]" name="saveUpdate">Save</button>
                 </div>
             </form>
-            <a class="mt-6 text-blue-400 hover:text-green-400 place-self-end hover:no-underline tracking-widest underline" href="list_all_items.php?keyword=&search=">Done?</a>
+            <a class="mt-6 text-blue-500 font-bold hover:text-green-400 place-self-end hover:no-underline tracking-widest underline" href="list_all_items.php?keyword=&search=">Done?</a>
         </div>
-        <script type="text/javascript" src="list2.js"></script>
+        <script type="text/javascript" src="update.js"></script>
     </body>
 </html>

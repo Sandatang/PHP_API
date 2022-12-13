@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 22, 2022 at 01:46 PM
+-- Generation Time: Dec 13, 2022 at 11:26 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -64,10 +64,9 @@ CREATE TABLE `item` (
 --
 
 INSERT INTO `item` (`iid`, `description`, `umsr`, `cid`, `qtyonhand`, `price`) VALUES
-(24, 'Tissue na blue', 'set', 6, '5.00', '100.00'),
-(26, 'Sibuyas', 'pc', 1, '5.00', '23.30'),
-(43, 'asds', 'kl', 4, '2.70', '4.00'),
-(44, 'Testing set update', 'kl', 1, '8.70', '3.00');
+(116, 'Egg', 'doz', 1, '2.00', '45.00'),
+(117, 'Rice', 'kl', 4, '50.00', '45.00'),
+(125, 'Banana', 'kl', 2, '2.50', '40.00');
 
 --
 -- Indexes for dumped tables
@@ -100,7 +99,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT for table `item`
 --
 ALTER TABLE `item`
-  MODIFY `iid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `iid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
